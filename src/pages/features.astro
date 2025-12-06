@@ -1,0 +1,165 @@
+---
+import '../styles/global.css';
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Footer from '../components/Footer.astro';
+import CTA from '../components/CTA.astro';
+import { ClipboardList, Target, Settings, MessageSquare, Wrench, FileText, BookOpen, Bell, CheckSquare, Camera, BarChart, WifiOff, Bot, GraduationCap, Link, Shield } from 'lucide-astro';
+---
+
+<Layout 
+	title="Características - EAR Audit"
+	description="Descubre todas las funcionalidades de EAR Audit: checklist personalizados, reportes automáticos, alertas en tiempo real y más."
+>
+	<Navigation />
+
+	<PageHeader 
+		title="Funcionalidades <span class='text-gradient'>Completas</span>"
+		subtitle="Herramientas diseñadas para auditorías efectivas y gestión profesional de tu establecimiento"
+	/>
+
+	<!-- Features Grid -->
+	<section class="features-page">
+		<div class="container">
+			<div class="grid grid-3">
+				<div class="card feature-card">
+					<div class="feature-icon">
+						<ClipboardList />
+					</div>
+					<h3>Checklist Personalizados</h3>
+					<p>Listas de verificación adaptadas para diferentes áreas de tu establecimiento, específicas por tipo de negocio: comida rápida, alta cocina, franquicias, heladerías.</p>
+				</div>
+				
+				<div class="card feature-card">
+					<div class="feature-icon">
+						<Target />
+					</div>
+					<h3>Interfaz Intuitiva</h3>
+					<p>Diseño sencillo y accesible. Opciones para ajustar tamaño de fuente y contraste para todos los usuarios. Evitamos menús complejos para facilitar la navegación.</p>
+				</div>
+				
+				<div class="card feature-card">
+					<div class="feature-icon">
+						<Settings />
+					</div>
+					<h3>Auditorías Adaptadas</h3>
+					<p>Personalización según necesidades específicas. Un restaurante de comida rápida tiene diferentes criterios que uno de alta cocina. Adaptamos cada auditoría a tu realidad.</p>
+				</div>
+
+				<div class="card feature-card">
+					<div class="feature-icon">
+						<MessageSquare />
+					</div>
+					<h3>Notas y Feedback</h3>
+					<p>Espacio para comentarios específicos en cada sección de la auditoría. Fundamental para la mejora de puntos críticos y comunicación efectiva con el equipo.</p>
+				</div>
+
+				<div class="card feature-card">
+					<div class="feature-icon">
+						<Wrench />
+					</div>
+					<h3>Soluciones Automáticas</h3>
+					<p>Sugerencias de sistemas de solución para los puntos a mejorar más comunes detectados durante las auditorías. Ayuda a tomar decisiones rápidas y efectivas.</p>
+				</div>
+
+				<div class="card feature-card">
+					<div class="feature-icon">
+						<FileText />
+					</div>
+					<h3>Reportes Automáticos</h3>
+					<p>Generación automática de reportes detallados exportables en PDF o Excel con resultados finales, estadísticas comparativas con auditorías anteriores y recomendaciones personalizadas.</p>
+				</div>
+
+				<div class="card feature-card">
+					<div class="feature-icon">
+						<BookOpen />
+					</div>
+					<h3>Historial Completo</h3>
+					<p>Acceso al historial de auditorías anteriores para identificar patrones y áreas recurrentes de mejora o falencias. Permite seguimiento a largo plazo del desempeño.</p>
+				</div>
+
+				<div class="card feature-card">
+					<div class="feature-icon">
+						<Bell />
+					</div>
+					<h3>Alertas en Tiempo Real</h3>
+					<p>Notificaciones instantáneas si se detectan problemas críticos durante la auditoría. Permite acción inmediata ante situaciones que requieren atención urgente.</p>
+				</div>
+
+				<div class="card feature-card">
+					<div class="feature-icon">
+						<CheckSquare />
+					</div>
+					<h3>Seguimiento de Tareas</h3>
+					<p>Seguimiento a puntos pendientes con fechas límite y asignación de tareas resolutivas. Establece responsables y plazos para cada acción correctiva necesaria.</p>
+				</div>
+
+				<div class="card feature-card">
+					<div class="feature-icon">
+						<Camera />
+					</div>
+					<h3>Evidencia Visual</h3>
+					<p>Sube fotos y videos como evidencia de incidencias detectadas y mejoras realizadas. Útil para futuras auditorías y documentación completa del estado del establecimiento.</p>
+				</div>
+
+				<div class="card feature-card">
+					<div class="feature-icon">
+						<BarChart />
+					</div>
+					<h3>Dashboard Visual</h3>
+					<p>Tablero de control con gráficos y resúmenes para una visión rápida del desempeño general. Métricas clave y KPIs para facilitar la toma de decisiones estratégicas.</p>
+				</div>
+
+				<div class="card feature-card">
+					<div class="feature-icon">
+						<WifiOff />
+					</div>
+					<h3>Modo Offline</h3>
+					<p>Audita sin conexión a internet. Los datos se sincronizan automáticamente al recuperar la conexión. Perfecto para establecimientos con conectividad limitada.</p>
+				</div>
+
+				<div class="card feature-card">
+					<div class="feature-icon">
+						<Bot />
+					</div>
+					<h3>Automatización</h3>
+					<p>Herramientas que automatizan parte de la auditoría, como verificación de temperatura a través de sensores conectados. Reduce errores humanos y aumenta la precisión.</p>
+				</div>
+
+				<div class="card feature-card">
+					<div class="feature-icon">
+						<GraduationCap />
+					</div>
+					<h3>Capacitación</h3>
+					<p>Videos cortos y tutoriales para aprender rápidamente a utilizar la app y entender criterios de auditorías. Material de entrenamiento siempre disponible para nuevos usuarios.</p>
+				</div>
+
+				<div class="card feature-card">
+					<div class="feature-icon">
+						<Link />
+					</div>
+					<h3>Integración</h3>
+					<p>Conexión con otros sistemas del restaurante como software de inventarios o sistema de reservas. Obtén información más precisa y mejora la eficiencia operativa.</p>
+				</div>
+
+				<div class="card feature-card">
+					<div class="feature-icon">
+						<Shield />
+					</div>
+					<h3>Seguridad de Datos</h3>
+					<p>Cumplimiento con normativas de privacidad y seguridad. Protección de datos sensibles de empleados y establecimientos mediante encriptación y controles de acceso.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<CTA 
+		title="¿Listo para empezar?"
+		description="Descubre cómo EAR puede transformar la gestión de tu establecimiento"
+		primaryCTA={{ text: "Solicitar Demo Gratis", href: "/#contacto" }}
+		secondaryCTA={{ text: "Conocer Más", href: "/about" }}
+	/>
+
+	<Footer />
+</Layout>

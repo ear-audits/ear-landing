@@ -1,0 +1,37 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  primaryCTA: {
+    text: string;
+    href: string;
+  };
+  secondaryCTA?: {
+    text: string;
+    href: string;
+  };
+  note?: string;
+}
+
+const { title, description, primaryCTA, secondaryCTA, note } = Astro.props;
+---
+
+<section class="cta-section">
+	<div class="container">
+		<div class="cta-card glass">
+			<h2>{title}</h2>
+			<p>{description}</p>
+			<div class="cta-buttons">
+				<a href={primaryCTA.href} class="btn btn-primary btn-lg">
+					{primaryCTA.text}
+				</a>
+				{secondaryCTA && (
+					<a href={secondaryCTA.href} class="btn btn-secondary btn-lg">
+						{secondaryCTA.text}
+					</a>
+				)}
+			</div>
+			{note && <p class="cta-note">{note}</p>}
+		</div>
+	</div>
+</section>

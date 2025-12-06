@@ -1,0 +1,180 @@
+---
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1); // remove the first "/"
+---
+
+<nav class="nav-header">
+	<div class="container">
+		<div class="nav-content">
+			<div class="nav-logo">
+				<a href="/">
+					<img width="150px" src="/logo.svg" alt="Logo" /></a
+				>
+			</div>
+
+			<!-- Hamburger Menu Button -->
+			<button class="mobile-menu-toggle" aria-label="Toggle menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+
+			<ul class="nav-links">
+				<li>
+					<a href="/" class={pathname === "/" ? "active" : ""}
+						>Inicio</a
+					>
+				</li>
+				<li>
+					<a
+						href="/features"
+						class={pathname.startsWith("/features") ? "active" : ""}
+						>Características</a
+					>
+				</li>
+				<li>
+					<a
+						href="/about"
+						class={pathname.startsWith("/about") ? "active" : ""}
+						>Nosotros</a
+					>
+				</li>
+				<li>
+					<a
+						href="/resources"
+						class={pathname.startsWith("/resources")
+							? "active"
+							: ""}>Recursos</a
+					>
+				</li>
+				<li>
+					<a href="/#contacto" class="btn btn-primary btn-sm"
+						>Contacto</a
+					>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<style>
+	/* Mobile menu toggle button */
+	.mobile-menu-toggle {
+		display: none;
+		flex-direction: column;
+		gap: 5px;
+		background: none;
+		border: none;
+		cursor: pointer;
+		padding: 8px;
+		z-index: 1001;
+	}
+
+	.mobile-menu-toggle span {
+		width: 25px;
+		height: 3px;
+		background: var(--color-text-primary);
+		border-radius: 3px;
+		transition: all 0.3s ease;
+	}
+
+	/* Mobile menu styles */
+	@media (max-width: 768px) {
+		.mobile-menu-toggle {
+			display: flex;
+		}
+
+		.nav-links {
+			position: fixed;
+			top: 0;
+			right: -100%;
+			height: 100vh;
+			width: 70%;
+			max-width: 300px;
+			background: var(--color-bg-secondary);
+			flex-direction: column;
+			padding: 80px 30px 30px;
+			gap: var(--spacing-lg);
+			transition: right 0.3s ease;
+			box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+		}
+
+		.nav-links.active {
+			right: 0;
+		}
+
+		.nav-links li {
+			width: 100%;
+		}
+
+		.nav-links a {
+			display: block;
+			padding: var(--spacing-sm) 0;
+			font-size: var(--font-size-lg);
+		}
+
+		.nav-links .btn {
+			width: 100%;
+			text-align: center;
+		}
+
+		/* Hamburger animation when active */
+		.mobile-menu-toggle.active span:nth-child(1) {
+			transform: rotate(45deg) translate(8px, 8px);
+		}
+
+		.mobile-menu-toggle.active span:nth-child(2) {
+			opacity: 0;
+		}
+
+		.mobile-menu-toggle.active span:nth-child(3) {
+			transform: rotate(-45deg) translate(7px, -7px);
+		}
+	}
+</style>
+
+<script is:inline>
+	function setupMobileMenu() {
+		const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
+		const navLinks = document.querySelector(".nav-links");
+
+		if (!mobileMenuToggle || !navLinks) return;
+
+		// Clone to remove old event listeners
+		const newToggle = mobileMenuToggle.cloneNode(true);
+		mobileMenuToggle.parentNode.replaceChild(newToggle, mobileMenuToggle);
+
+		newToggle.addEventListener("click", (e) => {
+			e.stopPropagation(); // Prevent immediate closing
+			newToggle.classList.toggle("active");
+			navLinks.classList.toggle("active");
+		});
+
+		// Close menu when clicking on a link
+		const links = navLinks.querySelectorAll("a");
+		links.forEach((link) => {
+			link.addEventListener("click", () => {
+				newToggle.classList.remove("active");
+				navLinks.classList.remove("active");
+			});
+		});
+
+		// Close menu when clicking outside
+		document.addEventListener("click", (e) => {
+			if (
+				navLinks.classList.contains("active") &&
+				!newToggle.contains(e.target) &&
+				!navLinks.contains(e.target)
+			) {
+				newToggle.classList.remove("active");
+				navLinks.classList.remove("active");
+			}
+		});
+	}
+
+	// Run on initial load
+	setupMobileMenu();
+
+	// Run on view transitions
+	document.addEventListener("astro:page-load", setupMobileMenu);
+</script>

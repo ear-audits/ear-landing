@@ -1,0 +1,279 @@
+---
+import "../styles/global.css";
+import { ViewTransitions } from "astro:transitions";
+import Navigation from "../components/Navigation.astro";
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Privacidad - EAR Audit</title>
+		<meta
+			name="description"
+			content="Políticas de privacidad y protección de datos de EAR Audit."
+		/>
+		<ViewTransitions />
+	</head>
+	<body>
+		<div
+			class="bg-gradient-radial purple"
+			style="top: -300px; left: -300px;"
+		>
+		</div>
+		<div
+			class="bg-gradient-radial blue"
+			style="bottom: -300px; right: -300px;"
+		>
+		</div>
+
+		<Navigation />
+
+		<section class="page-header">
+			<div class="container">
+				<h1>
+					Políticas de <span class="text-gradient">Privacidad</span>
+				</h1>
+				<p class="page-description">
+					Tu información está segura con nosotros
+				</p>
+			</div>
+		</section>
+
+		<section class="content-page">
+			<div class="container">
+				<div class="content-block glass">
+					<h2>Datos Recopilados</h2>
+					<p>
+						EAR solo solicita datos básicos necesarios para el
+						servicio:
+					</p>
+					<ul class="privacy-list">
+						<li>Nombre y apellido</li>
+						<li>Correo electrónico</li>
+						<li>Ubicación del establecimiento</li>
+					</ul>
+				</div>
+
+				<div class="content-block glass">
+					<h2>Sistema Operativo Contratado</h2>
+					<p>
+						Según el tipo de negocio, se incluye una serie de ítems
+						adaptados:
+					</p>
+					<div class="service-types">
+						<span class="service-badge">Take Away</span>
+						<span class="service-badge">Delivery</span>
+						<span class="service-badge">Restaurante</span>
+						<span class="service-badge">Franquicia</span>
+						<span class="service-badge">Heladería</span>
+						<span class="service-badge">Auditoría Externa</span>
+					</div>
+				</div>
+
+				<div class="content-block glass">
+					<h2>Auditorías Externas</h2>
+					<p>
+						Los resultados de auditorías externas se entregan en un
+						plazo de <strong>7 días hábiles</strong> en formato de:
+					</p>
+					<ul class="delivery-format">
+						<li>📷 Imágenes fijas</li>
+						<li>🎥 Videoclips</li>
+						<li>📋 Veredictos imparciales</li>
+					</ul>
+				</div>
+
+				<div class="content-block glass">
+					<h2>Propósito de Recopilación</h2>
+					<p>Los datos recopilados se utilizan para:</p>
+					<ul class="purpose-list">
+						<li>Cumplimiento de normativas</li>
+						<li>Mejorar la experiencia del usuario</li>
+						<li>Promover el oficio gastronómico</li>
+						<li>
+							Control de establecimientos al alcance de la mano
+						</li>
+						<li>Mejorar las ganancias y aumentar clientes</li>
+						<li>Mantener vínculos a largo plazo</li>
+					</ul>
+				</div>
+
+				<div class="content-block glass">
+					<h2>Confidencialidad</h2>
+					<p>
+						Los datos recopilados (análisis de rendimientos, envío
+						de notificaciones) se utilizan de manera <strong
+							>confidencial</strong
+						>. Solo los encargados de auditar tienen acceso a la
+						información de cada establecimiento.
+					</p>
+				</div>
+
+				<div class="content-block glass">
+					<h2>Seguridad de Datos</h2>
+					<p>
+						Cumplimos con las normativas de privacidad y seguridad
+						de datos. Toda la información sensible de empleados y
+						establecimientos está protegida mediante:
+					</p>
+					<ul class="privacy-list">
+						<li>Encriptación de datos en tránsito y en reposo</li>
+						<li>Controles de acceso estrictos</li>
+						<li>Auditorías de seguridad regulares</li>
+						<li>
+							Cumplimiento con regulaciones locales e
+							internacionales
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="cta-section">
+			<div class="container">
+				<div class="cta-card glass">
+					<h2>¿Tienes preguntas sobre privacidad?</h2>
+					<p>
+						Contáctanos para cualquier consulta sobre el manejo de
+						tus datos
+					</p>
+					<div class="cta-buttons">
+						<a
+							href="mailto:contacto@earaudit.com"
+							class="btn btn-primary btn-lg">Contactar</a
+						>
+						<a href="/" class="btn btn-secondary btn-lg"
+							>Volver al Inicio</a
+						>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-content">
+					<div class="footer-section">
+						<h3>EAR Audit</h3>
+						<p>
+							La solución completa para auditorías de
+							restaurantes, franquicias y establecimientos
+							gastronómicos.
+						</p>
+					</div>
+					<div class="footer-section">
+						<h4>Navegación</h4>
+						<ul>
+							<li><a href="/">Inicio</a></li>
+							<li><a href="/features">Características</a></li>
+							<li><a href="/about">Nosotros</a></li>
+							<li><a href="/resources">Recursos</a></li>
+							<li><a href="/privacy">Privacidad</a></li>
+						</ul>
+					</div>
+					<div class="footer-section">
+						<h4>Contacto</h4>
+						<ul>
+							<li>📧 contacto@earaudit.com</li>
+							<li>📱 +1 (555) 123-4567</li>
+							<li>📍 Ciudad, País</li>
+						</ul>
+					</div>
+					<div class="footer-section">
+						<h4>Síguenos</h4>
+						<div class="social-links">
+							<a href="#">LinkedIn</a>
+							<a href="#">Twitter</a>
+							<a href="#">Facebook</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p>&copy; 2025 EAR Audit. Todos los derechos reservados.</p>
+				</div>
+			</div>
+		</footer>
+
+		<style>
+			.page-header {
+				padding: calc(80px + var(--spacing-3xl)) 0 var(--spacing-3xl);
+				text-align: center;
+			}
+
+			.page-description {
+				font-size: var(--font-size-xl);
+				color: var(--color-text-secondary);
+				max-width: 800px;
+				margin: 0 auto;
+			}
+
+			.content-page {
+				padding: var(--spacing-3xl) 0;
+			}
+
+			.content-block {
+				padding: var(--spacing-2xl);
+				border-radius: var(--radius-xl);
+				margin-bottom: var(--spacing-xl);
+			}
+
+			.content-block h2 {
+				margin-top: 0;
+				margin-bottom: var(--spacing-lg);
+			}
+
+			.privacy-list,
+			.purpose-list,
+			.delivery-format {
+				list-style: none;
+				padding-left: 0;
+			}
+
+			.privacy-list li,
+			.purpose-list li,
+			.delivery-format li {
+				padding: var(--spacing-sm) 0;
+				padding-left: var(--spacing-md);
+				position: relative;
+			}
+
+			.privacy-list li::before,
+			.purpose-list li::before,
+			.delivery-format li::before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 6px;
+				height: 6px;
+				background: var(--color-accent-primary);
+				border-radius: 50%;
+			}
+
+			.service-types {
+				display: flex;
+				flex-wrap: wrap;
+				gap: var(--spacing-sm);
+				margin: var(--spacing-lg) 0;
+			}
+
+			.service-badge {
+				display: inline-block;
+				padding: var(--spacing-xs) var(--spacing-md);
+				background: var(--color-accent-gradient);
+				border-radius: var(--radius-full);
+				font-size: var(--font-size-sm);
+				font-weight: 600;
+			}
+
+			.nav-links a.active {
+				color: var(--color-accent-primary);
+			}
+		</style>
+	</body>
+</html>

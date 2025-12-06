@@ -1,0 +1,353 @@
+---
+import "../styles/global.css";
+import { ViewTransitions } from "astro:transitions";
+import Navigation from "../components/Navigation.astro";
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Nosotros - EAR Audit</title>
+		<meta
+			name="description"
+			content="Conoce cómo funciona EAR Audit: sistema de calificación, requisitos y proceso de auditoría."
+		/>
+		<ViewTransitions />
+	</head>
+	<body>
+		<div
+			class="bg-gradient-radial purple"
+			style="top: -300px; left: -300px;"
+		>
+		</div>
+		<div
+			class="bg-gradient-radial blue"
+			style="bottom: -300px; right: -300px;"
+		>
+		</div>
+
+		<Navigation />
+
+		<section class="page-header">
+			<div class="container">
+				<h1>Sobre <span class="text-gradient">EAR Audit</span></h1>
+				<p class="page-description">
+					Sistema de evaluación profesional adaptado a tu negocio
+				</p>
+			</div>
+		</section>
+
+		<section class="content-page">
+			<div class="container">
+				<div class="content-block glass">
+					<h2>Sistema de Calificación</h2>
+					<p>
+						Nuestro sistema de evaluación garantiza el cumplimiento
+						de normas y políticas de tu empresa:
+					</p>
+
+					<div class="scoring-system">
+						<div class="score-item">
+							<div class="score-badge fail">< 60%</div>
+							<p>
+								<strong>No Aprobada</strong> - Requiere acción inmediata
+							</p>
+						</div>
+						<div class="score-item">
+							<div class="score-badge warning">60-69%</div>
+							<p>
+								<strong>Requiere Seguimiento</strong> - Necesita
+								mejoras
+							</p>
+						</div>
+						<div class="score-item">
+							<div class="score-badge success">≥ 70%</div>
+							<p><strong>Aprobada</strong> - Cumple estándares</p>
+						</div>
+					</div>
+
+					<div class="alert-box">
+						<h4>⚠️ Puntos Críticos</h4>
+						<p>
+							Si se detectan fallos en áreas críticas (higiene y
+							seguridad), la auditoría puede considerarse "no
+							aprobada" independientemente del puntaje final.
+						</p>
+					</div>
+				</div>
+
+				<div class="content-block glass">
+					<h2>Requisitos Previos</h2>
+					<ul class="requirements-list">
+						<li>
+							✓ Todo el personal debe tener licencia al día de
+							manipulación de alimentos
+						</li>
+						<li>
+							✓ Cumplimiento de normativas locales e
+							internacionales
+						</li>
+						<li>✓ Registros organizados y actualizados</li>
+					</ul>
+				</div>
+
+				<div class="content-block glass">
+					<h2>Plan de Acción</h2>
+					<p>Cuando se detectan puntos críticos con problemas:</p>
+					<ol class="action-plan">
+						<li>Se activa plan de acción inmediato</li>
+						<li>Auditoría de seguimiento programada</li>
+						<li>
+							Si no se resuelve, se activan controles adicionales
+						</li>
+					</ol>
+				</div>
+
+				<div class="content-block glass">
+					<h2>Interfaz y Reportes</h2>
+					<div class="grid grid-2">
+						<div>
+							<h4>📱 Interfaz Amigable</h4>
+							<p>
+								Facilita la utilización e ingreso de resultados
+								con retroalimentación continua e inmediata.
+							</p>
+						</div>
+						<div>
+							<h4>📊 Análisis Detallado</h4>
+							<p>
+								Muestra resultados y tendencias a lo largo del
+								tiempo, facilitando la toma de decisiones.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="content-block glass">
+					<h2>Actualización Continua</h2>
+					<p>Nos mantenemos al día con:</p>
+					<ul class="update-list">
+						<li>
+							Regulaciones locales e internacionales de la
+							industria gastronómica
+						</li>
+						<li>Retroalimentación de auditores y gerentes</li>
+						<li>
+							Calendarios de revisión para mantener checklist
+							actualizados
+						</li>
+						<li>
+							Investigación de mercado para identificar nuevas
+							tendencias
+						</li>
+						<li>
+							Comparación con mejores prácticas de la industria
+						</li>
+						<li>
+							Pruebas piloto antes de incorporar nuevos ítems de
+							evaluación
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="cta-section">
+			<div class="container">
+				<div class="cta-card glass">
+					<h2>¿Listo para empezar?</h2>
+					<p>
+						Descubre cómo EAR puede transformar la gestión de tu
+						establecimiento
+					</p>
+					<div class="cta-buttons">
+						<a href="/#contacto" class="btn btn-primary btn-lg"
+							>Solicitar Demo Gratis</a
+						>
+						<a href="/features" class="btn btn-secondary btn-lg"
+							>Ver Características</a
+						>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-content">
+					<div class="footer-section">
+						<h3>EAR Audit</h3>
+						<p>
+							La solución completa para auditorías de
+							restaurantes, franquicias y establecimientos
+							gastronómicos.
+						</p>
+					</div>
+					<div class="footer-section">
+						<h4>Navegación</h4>
+						<ul>
+							<li><a href="/">Inicio</a></li>
+							<li><a href="/features">Características</a></li>
+							<li><a href="/about">Nosotros</a></li>
+							<li><a href="/resources">Recursos</a></li>
+							<li><a href="/privacy">Privacidad</a></li>
+						</ul>
+					</div>
+					<div class="footer-section">
+						<h4>Contacto</h4>
+						<ul>
+							<li>📧 contacto@earaudit.com</li>
+							<li>📱 +1 (555) 123-4567</li>
+							<li>📍 Ciudad, País</li>
+						</ul>
+					</div>
+					<div class="footer-section">
+						<h4>Síguenos</h4>
+						<div class="social-links">
+							<a href="#">LinkedIn</a>
+							<a href="#">Twitter</a>
+							<a href="#">Facebook</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p>&copy; 2025 EAR Audit. Todos los derechos reservados.</p>
+				</div>
+			</div>
+		</footer>
+
+		<style>
+			.page-header {
+				padding: calc(80px + var(--spacing-3xl)) 0 var(--spacing-3xl);
+				text-align: center;
+			}
+
+			.page-header h1 {
+				margin-bottom: var(--spacing-md);
+			}
+
+			.page-description {
+				font-size: var(--font-size-xl);
+				color: var(--color-text-secondary);
+				max-width: 800px;
+				margin: 0 auto;
+			}
+
+			.content-page {
+				padding: var(--spacing-3xl) 0;
+			}
+
+			.content-block {
+				padding: var(--spacing-2xl);
+				border-radius: var(--radius-xl);
+				margin-bottom: var(--spacing-xl);
+			}
+
+			.content-block h2 {
+				margin-top: 0;
+				margin-bottom: var(--spacing-lg);
+				font-size: var(--font-size-2xl);
+			}
+
+			.content-block h4 {
+				margin-top: 0;
+				margin-bottom: var(--spacing-sm);
+			}
+
+			.scoring-system {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+				gap: var(--spacing-lg);
+				margin: var(--spacing-lg) 0;
+			}
+
+			.score-item {
+				text-align: center;
+			}
+
+			.score-badge {
+				display: inline-block;
+				padding: var(--spacing-sm) var(--spacing-lg);
+				border-radius: var(--radius-lg);
+				font-size: var(--font-size-xl);
+				font-weight: 700;
+				margin-bottom: var(--spacing-sm);
+			}
+
+			.score-badge.fail {
+				background: linear-gradient(135deg, #ff4444, #cc0000);
+				color: white;
+			}
+
+			.score-badge.warning {
+				background: linear-gradient(135deg, #ffaa00, #ff8800);
+				color: white;
+			}
+
+			.score-badge.success {
+				background: linear-gradient(135deg, #00cc66, #00aa44);
+				color: white;
+			}
+
+			.alert-box {
+				background: rgba(255, 170, 0, 0.1);
+				border-left: 4px solid #ffaa00;
+				padding: var(--spacing-lg);
+				border-radius: var(--radius-md);
+				margin: var(--spacing-lg) 0;
+			}
+
+			.alert-box h4 {
+				margin-top: 0;
+				color: #ffaa00;
+			}
+
+			.requirements-list,
+			.update-list {
+				list-style: none;
+				padding-left: 0;
+			}
+
+			.requirements-list li,
+			.update-list li {
+				padding: var(--spacing-sm) 0;
+				padding-left: var(--spacing-md);
+				position: relative;
+			}
+
+			.requirements-list li::before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 6px;
+				height: 6px;
+				background: var(--color-accent-primary);
+				border-radius: 50%;
+			}
+
+			.action-plan {
+				padding-left: var(--spacing-xl);
+			}
+
+			.action-plan li {
+				margin-bottom: var(--spacing-sm);
+			}
+
+			.nav-links a.active {
+				color: var(--color-accent-primary);
+			}
+
+			@media (max-width: 768px) {
+				.scoring-system {
+					grid-template-columns: 1fr;
+				}
+			}
+		</style>
+	</body>
+</html>

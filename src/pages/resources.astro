@@ -1,0 +1,391 @@
+---
+import "../styles/global.css";
+import { ViewTransitions } from "astro:transitions";
+import Navigation from "../components/Navigation.astro";
+import {
+	Zap,
+	Package,
+	Star,
+	CheckCircle,
+	TrendingUp,
+	Leaf,
+} from "lucide-astro";
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Recursos - EAR Audit</title>
+		<meta
+			name="description"
+			content="Información sobre auditorías externas, beneficios y preguntas frecuentes sobre EAR Audit."
+		/>
+		<ViewTransitions />
+	</head>
+	<body>
+		<div
+			class="bg-gradient-radial purple"
+			style="top: -300px; left: -300px;"
+		>
+		</div>
+		<div
+			class="bg-gradient-radial blue"
+			style="bottom: -300px; right: -300px;"
+		>
+		</div>
+
+		<Navigation />
+
+		<section class="page-header">
+			<div class="container">
+				<h1>Recursos y <span class="text-gradient">Guías</span></h1>
+				<p class="page-description">
+					Información útil sobre auditorías, beneficios y preguntas
+					frecuentes
+				</p>
+			</div>
+		</section>
+
+		<section class="content-page">
+			<div class="container">
+				<!-- FAQ Section -->
+				<h2 class="section-title">Preguntas Frecuentes</h2>
+
+				<div class="faq-grid">
+					<div class="faq-item glass">
+						<h3>¿Es obligatorio realizar una auditoría externa?</h3>
+						<p>
+							La obligación depende de la legislación y
+							regulaciones aplicables a tu empresa o
+							establecimiento. En algunos casos, el manual de
+							franquicia puede exigir una auditoría externa para
+							corroborar todo tipo de incertidumbres.
+						</p>
+					</div>
+
+					<div class="faq-item glass">
+						<h3>¿Cuándo debo realizar una auditoría externa?</h3>
+						<p>
+							Es recomendable realizar una auditoría externa cada <strong
+								>3 o 4 meses</strong
+							>. Sin embargo, la frecuencia puede variar según las
+							necesidades del establecimiento. Algunos lugares con
+							mayores puntos críticos requerirán seguimiento más
+							activo y frecuente.
+						</p>
+					</div>
+
+					<div class="faq-item glass">
+						<h3>¿Cómo puedo encontrar un auditor externo?</h3>
+						<ul>
+							<li>Consultando a colegas de la industria</li>
+							<li>
+								Buscando recomendaciones de otros dueños,
+								empresarios e inversionistas
+							</li>
+							<li>Buscando apps sobre auditoría gastronómica</li>
+							<li>Revisando el botón EXTRAS de nuestra app</li>
+						</ul>
+					</div>
+
+					<div class="faq-item glass">
+						<h3>¿Qué preguntas hacer a un auditor externo?</h3>
+						<ul>
+							<li>¿Cuál es su experiencia en la industria?</li>
+							<li>¿Qué tipo de auditoría ofrecen?</li>
+							<li>¿Cuál es su tarifa por hora?</li>
+							<li>
+								¿Qué tipo de informe de auditoría proporcionan?
+							</li>
+							<li>¿Tienen referencias de clientes anteriores?</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Benefits Section -->
+				<h2
+					class="section-title"
+					style="margin-top: var(--spacing-3xl);"
+				>
+					Beneficios de Realizar Auditorías
+				</h2>
+				<p class="section-subtitle">
+					Claves para mejorar operación, rentabilidad y experiencia
+					del cliente
+				</p>
+
+				<div class="benefits-grid">
+					<div class="benefit-card glass">
+						<div class="benefit-icon">
+							<Zap />
+						</div>
+						<h3>Eficiencia Operativa</h3>
+						<p>
+							Identifica ineficiencias en cocina, servicio o
+							gestión de inventarios. Reduce tiempos de espera,
+							mejora productividad y señala áreas con gastos
+							innecesarios.
+						</p>
+					</div>
+
+					<div class="benefit-card glass">
+						<div class="benefit-icon">
+							<Package />
+						</div>
+						<h3>Control de Inventarios</h3>
+						<p>
+							Previene robos y pérdidas identificando
+							discrepancias en existencias. Optimiza el uso de
+							insumos detectando excesos o productos con baja
+							rotación.
+						</p>
+					</div>
+
+					<div class="benefit-card glass">
+						<div class="benefit-icon">
+							<Star />
+						</div>
+						<h3>Calidad del Servicio</h3>
+						<p>
+							Evalúa tiempos de espera, actitud del personal y
+							calidad de la comida. Mejoras en el servicio
+							aumentan la satisfacción y lealtad del cliente.
+						</p>
+					</div>
+
+					<div class="benefit-card glass">
+						<div class="benefit-icon">
+							<CheckCircle />
+						</div>
+						<h3>Cumplimiento de Normas</h3>
+						<p>
+							Asegura cumplimiento con regulaciones de higiene y
+							seguridad alimentaria. Evita multas y protege la
+							reputación del establecimiento.
+						</p>
+					</div>
+
+					<div class="benefit-card glass">
+						<div class="benefit-icon">
+							<TrendingUp />
+						</div>
+						<h3>Mayor Rentabilidad</h3>
+						<p>
+							Analiza ventas y márgenes para identificar platos
+							más rentables. Optimiza estructura de precios para
+							ser competitiva y cubrir costos adecuadamente.
+						</p>
+					</div>
+
+					<div class="benefit-card glass">
+						<div class="benefit-icon">
+							<Leaf />
+						</div>
+						<h3>Sostenibilidad</h3>
+						<p>
+							Identifica áreas para reducir desperdicio y mejorar
+							eficiencia energética. Analiza condiciones laborales
+							y trato justo hacia empleados.
+						</p>
+					</div>
+				</div>
+
+				<div
+					class="content-block glass"
+					style="margin-top: var(--spacing-2xl);"
+				>
+					<h3>Conclusión</h3>
+					<p>
+						Una auditoría no solo mejora la eficiencia y reduce
+						costos, sino que también mejora la calidad del servicio,
+						asegura cumplimiento de normativas y, lo más importante, <strong
+							>incrementa la rentabilidad y sostenibilidad del
+							negocio</strong
+						>.
+					</p>
+					<p>
+						La inversión en auditorías es una inversión en el
+						progreso, transparencia y éxito a largo plazo de tu
+						establecimiento.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="cta-section">
+			<div class="container">
+				<div class="cta-card glass">
+					<h2>¿Listo para empezar?</h2>
+					<p>
+						Descubre cómo EAR puede transformar la gestión de tu
+						establecimiento
+					</p>
+					<div class="cta-buttons">
+						<a href="/#contacto" class="btn btn-primary btn-lg"
+							>Solicitar Demo Gratis</a
+						>
+						<a href="/features" class="btn btn-secondary btn-lg"
+							>Ver Características</a
+						>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-content">
+					<div class="footer-section">
+						<h3>EAR Audit</h3>
+						<p>
+							La solución completa para auditorías de
+							restaurantes, franquicias y establecimientos
+							gastronómicos.
+						</p>
+					</div>
+					<div class="footer-section">
+						<h4>Navegación</h4>
+						<ul>
+							<li><a href="/">Inicio</a></li>
+							<li><a href="/features">Características</a></li>
+							<li><a href="/about">Nosotros</a></li>
+							<li><a href="/resources">Recursos</a></li>
+							<li><a href="/privacy">Privacidad</a></li>
+						</ul>
+					</div>
+					<div class="footer-section">
+						<h4>Contacto</h4>
+						<ul>
+							<li>📧 contacto@earaudit.com</li>
+							<li>📱 +1 (555) 123-4567</li>
+							<li>📍 Ciudad, País</li>
+						</ul>
+					</div>
+					<div class="footer-section">
+						<h4>Síguenos</h4>
+						<div class="social-links">
+							<a href="#">LinkedIn</a>
+							<a href="#">Twitter</a>
+							<a href="#">Facebook</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p>&copy; 2025 EAR Audit. Todos los derechos reservados.</p>
+				</div>
+			</div>
+		</footer>
+
+		<style>
+			.page-header {
+				padding: calc(80px + var(--spacing-3xl)) 0 var(--spacing-3xl);
+				text-align: center;
+			}
+
+			.page-description {
+				font-size: var(--font-size-xl);
+				color: var(--color-text-secondary);
+				max-width: 800px;
+				margin: 0 auto;
+			}
+
+			.content-page {
+				padding: var(--spacing-3xl) 0;
+			}
+
+			.section-title {
+				text-align: center;
+				margin-bottom: var(--spacing-md);
+				font-size: var(--font-size-3xl);
+			}
+
+			.section-subtitle {
+				text-align: center;
+				color: var(--color-text-secondary);
+				margin-bottom: var(--spacing-2xl);
+			}
+
+			.faq-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				gap: var(--spacing-lg);
+				margin-bottom: var(--spacing-3xl);
+			}
+
+			.faq-item {
+				padding: var(--spacing-xl);
+				border-radius: var(--radius-xl);
+			}
+
+			.faq-item h3 {
+				margin-top: 0;
+				margin-bottom: var(--spacing-md);
+				color: var(--color-accent-primary);
+			}
+
+			.faq-item ul {
+				list-style: none;
+				padding-left: 0;
+			}
+
+			.faq-item ul li {
+				padding: var(--spacing-xs) 0;
+				padding-left: var(--spacing-md);
+				position: relative;
+			}
+
+			.faq-item ul li::before {
+				content: "•";
+				position: absolute;
+				left: 0;
+				color: var(--color-accent-primary);
+			}
+
+			.benefits-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+				gap: var(--spacing-lg);
+			}
+
+			.benefit-card {
+				padding: var(--spacing-xl);
+				border-radius: var(--radius-xl);
+				text-align: center;
+			}
+
+			.benefit-icon {
+				font-size: 2.5rem;
+				margin-bottom: var(--spacing-md);
+			}
+
+			.benefit-card h3 {
+				margin-bottom: var(--spacing-sm);
+			}
+
+			.content-block {
+				padding: var(--spacing-2xl);
+				border-radius: var(--radius-xl);
+			}
+
+			.content-block h3 {
+				margin-top: 0;
+				color: var(--color-accent-primary);
+			}
+
+			.nav-links a.active {
+				color: var(--color-accent-primary);
+			}
+
+			@media (max-width: 768px) {
+				.faq-grid,
+				.benefits-grid {
+					grid-template-columns: 1fr;
+				}
+			}
+		</style>
+	</body>
+</html>

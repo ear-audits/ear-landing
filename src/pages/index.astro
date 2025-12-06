@@ -1,0 +1,733 @@
+---
+import "../styles/global.css";
+import { ViewTransitions } from "astro:transitions";
+import Navigation from "../components/Navigation.astro";
+import {
+	Zap,
+	CheckCircle,
+	DollarSign,
+	BarChart,
+	ClipboardList,
+	FileText,
+	Bell,
+	Camera,
+	WifiOff,
+	Lock,
+} from "lucide-astro";
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="generator" content={Astro.generator} />
+
+		<!-- SEO Meta Tags -->
+		<title>Ear Audit - Auditorías Inteligentes empresa o marca</title>
+		<meta
+			name="description"
+			content="Optimiza la calidad y cumplimiento de tu restaurante con Ear Audit. Auditorías digitales, reportes detallados y seguimiento en tiempo real."
+		/>
+		<meta
+			name="keywords"
+			content="auditoría restaurantes, control de calidad, inspección restaurantes, cumplimiento normativo, gestión restaurantes"
+		/>
+
+		<!-- Open Graph -->
+		<meta
+			property="og:title"
+			content="Ear Audit - Auditorías Inteligentes empresa o marca"
+		/>
+		<meta
+			property="og:description"
+			content="Optimiza la calidad y cumplimiento de tu restaurante con auditorías digitales inteligentes."
+		/>
+		<meta property="og:type" content="website" />
+
+		<!-- Fonts are loaded via CSS @import -->
+		<ViewTransitions />
+	</head>
+	<body>
+		<!-- Background Effects -->
+		<div
+			class="bg-gradient-radial purple"
+			style="top: -300px; left: -300px;"
+		>
+		</div>
+		<div
+			class="bg-gradient-radial blue"
+			style="bottom: -300px; right: -300px;"
+		>
+		</div>
+
+		<Navigation />
+		<!-- Hero Section -->
+		<section id="hero" class="hero">
+			<div class="container">
+				<div class="hero-content">
+					<div class="hero-text animate-fade-in-up">
+						<h1>
+							Auditorías Profesionales que Transforman tu
+							Restaurante
+						</h1>
+						<p class="hero-description">
+							Sistema completo de auditorías digitales con
+							reportes automáticos, seguimiento en tiempo real y
+							cumplimiento normativo garantizado. Optimiza
+							calidad, reduce costos y aumenta rentabilidad.
+						</p>
+						<div class="hero-cta">
+							<a
+								href="#contacto"
+								class="btn btn-primary btn-lg"
+								id="cta-hero-primary"
+							>
+								Solicitar Demo Gratis
+							</a>
+							<a
+								href="/features"
+								class="btn btn-secondary btn-lg"
+								id="cta-hero-secondary"
+							>
+								Ver Características
+							</a>
+						</div>
+					</div>
+					<div class="hero-image animate-fade-in">
+						<img
+							src="/hero.png"
+							alt="Auditoría de restaurante en tablet"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Benefits Section -->
+		<section id="beneficios" class="benefits">
+			<div class="container">
+				<div class="section-header text-center">
+					<h2>
+						¿Por qué elegir <span class="text-gradient">EAR</span>?
+					</h2>
+					<p>Beneficios que transforman tu operación</p>
+				</div>
+
+				<div class="grid grid-2">
+					<div class="benefit-item glass">
+						<div class="benefit-icon">
+							<Zap />
+						</div>
+						<h3>Eficiencia Operativa</h3>
+						<p>
+							Reduce tiempo de auditoría hasta 60%. Identifica
+							ineficiencias en cocina, servicio e inventarios.
+							Optimiza procesos y reduce costos operativos.
+						</p>
+					</div>
+
+					<div class="benefit-item glass">
+						<div class="benefit-icon">
+							<CheckCircle />
+						</div>
+						<h3>Cumplimiento Garantizado</h3>
+						<p>
+							Mantente actualizado con normativas sanitarias
+							locales e internacionales. Evita multas y protege tu
+							reputación con checklist siempre actualizados.
+						</p>
+					</div>
+
+					<div class="benefit-item glass">
+						<div class="benefit-icon">
+							<DollarSign />
+						</div>
+						<h3>Mayor Rentabilidad</h3>
+						<p>
+							Analiza ventas y márgenes para identificar platos
+							más rentables. Optimiza precios y reduce
+							desperdicios para aumentar ganancias.
+						</p>
+					</div>
+
+					<div class="benefit-item glass">
+						<div class="benefit-icon">
+							<BarChart />
+						</div>
+						<h3>Decisiones Basadas en Datos</h3>
+						<p>
+							Dashboard visual con métricas en tiempo real.
+							Identifica tendencias, patrones y áreas de mejora
+							con reportes automáticos detallados.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Features Section -->
+		<section id="caracteristicas" class="features">
+			<div class="container">
+				<div class="section-header text-center">
+					<h2>
+						Funcionalidades <span class="text-gradient"
+							>Principales</span
+						>
+					</h2>
+					<p>Todo lo que necesitas para auditorías profesionales</p>
+				</div>
+
+				<div class="grid grid-3">
+					<div class="card feature-card">
+						<div class="feature-icon">
+							<ClipboardList />
+						</div>
+						<h3>Checklist Personalizados</h3>
+						<p>
+							Listas adaptadas por tipo de negocio: comida rápida,
+							alta cocina, franquicias, heladerías.
+						</p>
+					</div>
+
+					<div class="card feature-card">
+						<div class="feature-icon">
+							<FileText />
+						</div>
+						<h3>Reportes Automáticos</h3>
+						<p>
+							Genera informes en PDF/Excel con resultados,
+							estadísticas comparativas y recomendaciones.
+						</p>
+					</div>
+
+					<div class="card feature-card">
+						<div class="feature-icon">
+							<Bell />
+						</div>
+						<h3>Alertas en Tiempo Real</h3>
+						<p>
+							Notificaciones instantáneas cuando se detectan
+							problemas críticos durante auditorías.
+						</p>
+					</div>
+
+					<div class="card feature-card">
+						<div class="feature-icon">
+							<Camera />
+						</div>
+						<h3>Evidencia Visual</h3>
+						<p>
+							Captura fotos y videos como evidencia de incidencias
+							y mejoras realizadas.
+						</p>
+					</div>
+
+					<div class="card feature-card">
+						<div class="feature-icon">
+							<WifiOff />
+						</div>
+						<h3>Modo Offline</h3>
+						<p>
+							Audita sin internet. Sincronización automática al
+							recuperar conexión.
+						</p>
+					</div>
+
+					<div class="card feature-card">
+						<div class="feature-icon">
+							<Lock />
+						</div>
+						<h3>Seguridad Total</h3>
+						<p>
+							Cumplimiento con normativas de privacidad. Datos
+							encriptados y confidenciales.
+						</p>
+					</div>
+				</div>
+
+				<div
+					class="text-center"
+					style="margin-top: var(--spacing-2xl);"
+				>
+					<a href="/features" class="btn btn-secondary"
+						>Ver Todas las Características →</a
+					>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA Section -->
+		<section id="contacto" class="cta-section">
+			<div class="container">
+				<div class="cta-card glass">
+					<h2>¿Listo para transformar tu establecimiento?</h2>
+					<p>
+						Únete a cientos de restaurantes que ya confían en EAR
+						para mantener los más altos estándares de calidad,
+						cumplimiento y rentabilidad.
+					</p>
+					<div class="cta-buttons">
+						<a
+							href="mailto:contacto@earaudit.com"
+							class="btn btn-primary btn-lg"
+							id="cta-contact"
+						>
+							Solicitar Demo Gratis
+						</a>
+						<a
+							href="/about"
+							class="btn btn-secondary btn-lg"
+							id="cta-learn"
+						>
+							Conocer Más
+						</a>
+					</div>
+					<p class="cta-note">
+						Sin compromiso • Demo de 30 minutos • Soporte en español
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer id="footer" class="footer">
+			<div class="container">
+				<div class="footer-content">
+					<div class="footer-section" id="footer-about">
+						<h3>EAR Audit</h3>
+						<p>
+							La solución completa para auditorías de
+							restaurantes, franquicias y establecimientos
+							gastronómicos. Calidad, cumplimiento y excelencia
+							operativa.
+						</p>
+					</div>
+
+					<div class="footer-section" id="footer-links">
+						<h4>Navegación</h4>
+						<ul>
+							<li><a href="/">Inicio</a></li>
+							<li><a href="/features">Características</a></li>
+							<li><a href="/about">Nosotros</a></li>
+							<li><a href="/resources">Recursos</a></li>
+							<li><a href="/privacy">Privacidad</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-section" id="footer-contact">
+						<h4>Contacto</h4>
+						<ul>
+							<li>📧 contacto@earaudit.com</li>
+							<li>📱 +1 (555) 123-4567</li>
+							<li>📍 Ciudad, País</li>
+						</ul>
+					</div>
+
+					<div class="footer-section" id="footer-social">
+						<h4>Síguenos</h4>
+						<div class="social-links">
+							<a
+								href="#"
+								aria-label="LinkedIn"
+								id="social-linkedin">LinkedIn</a
+							>
+							<a href="#" aria-label="Twitter" id="social-twitter"
+								>Twitter</a
+							>
+							<a
+								href="#"
+								aria-label="Facebook"
+								id="social-facebook">Facebook</a
+							>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer-bottom">
+					<p>&copy; 2025 EAR Audit. Todos los derechos reservados.</p>
+				</div>
+			</div>
+		</footer>
+
+		<style>
+			/* Navigation Header */
+			.nav-header {
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				background: rgba(10, 10, 30, 0.9);
+				backdrop-filter: blur(10px);
+				border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+				z-index: 1000;
+				padding: var(--spacing-md) 0;
+			}
+
+			.nav-content {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.nav-logo a {
+				font-size: var(--font-size-xl);
+				font-weight: 700;
+				background: var(--color-accent-gradient);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+				text-decoration: none;
+			}
+
+			.nav-links {
+				display: flex;
+				gap: var(--spacing-xl);
+				list-style: none;
+				align-items: center;
+			}
+
+			.nav-links a {
+				color: var(--color-text-secondary);
+				text-decoration: none;
+				transition: color var(--transition-fast);
+				font-weight: 500;
+			}
+
+			.nav-links a:hover {
+				color: var(--color-accent-primary);
+			}
+
+			.nav-links a.active {
+				color: var(--color-accent-primary);
+			}
+
+			.btn-sm {
+				padding: var(--spacing-xs) var(--spacing-md);
+				font-size: var(--font-size-sm);
+			}
+
+			.btn-lg {
+				padding: var(--spacing-md) var(--spacing-xl);
+				font-size: var(--font-size-lg);
+			}
+
+			/* Hero Styles */
+			.hero {
+				min-height: 100vh;
+				display: flex;
+				align-items: center;
+				position: relative;
+				overflow: hidden;
+				padding-top: 80px;
+			}
+
+			.hero-content {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: var(--spacing-3xl);
+				align-items: center;
+			}
+
+			.hero-text {
+				z-index: 1;
+			}
+
+			.hero-description {
+				font-size: var(--font-size-xl);
+				margin-bottom: var(--spacing-xl);
+				line-height: 1.8;
+			}
+
+			.hero-cta {
+				display: flex;
+				gap: var(--spacing-md);
+				flex-wrap: wrap;
+				margin-bottom: var(--spacing-xl);
+			}
+
+			.hero-stats {
+				display: flex;
+				gap: var(--spacing-2xl);
+				margin-top: var(--spacing-xl);
+			}
+
+			.stat-item {
+				text-align: center;
+			}
+
+			.stat-number {
+				font-size: var(--font-size-4xl);
+				font-weight: 800;
+				background: var(--color-accent-gradient);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+				line-height: 1;
+				margin-bottom: var(--spacing-xs);
+			}
+
+			.stat-label {
+				font-size: var(--font-size-sm);
+				color: var(--color-text-secondary);
+			}
+
+			.hero-image {
+				position: relative;
+				z-index: 1;
+			}
+
+			.hero-image img {
+				width: 100%;
+				height: auto;
+				border-radius: var(--radius-2xl);
+				box-shadow: var(--shadow-xl);
+			}
+
+			/* Benefits Section */
+			.benefits {
+				background: var(--color-bg-secondary);
+			}
+
+			.section-header {
+				margin-bottom: var(--spacing-3xl);
+			}
+
+			.section-header h2 {
+				margin-bottom: var(--spacing-sm);
+			}
+
+			.section-header p {
+				font-size: var(--font-size-lg);
+			}
+
+			.benefit-item {
+				padding: var(--spacing-xl);
+				border-radius: var(--radius-xl);
+				transition: all var(--transition-base);
+				text-align: center;
+			}
+
+			.benefit-item:hover {
+				transform: translateY(-5px);
+				box-shadow: var(--shadow-xl);
+			}
+
+			.benefit-icon {
+				font-size: 3rem;
+				margin-bottom: var(--spacing-md);
+				display: inline-block;
+			}
+
+			.benefit-item h3 {
+				margin-bottom: var(--spacing-sm);
+				font-size: var(--font-size-xl);
+			}
+
+			/* Features Styles */
+			.features {
+				background: var(--color-bg-primary);
+			}
+
+			.feature-card {
+				text-align: center;
+			}
+
+			.feature-icon {
+				font-size: 3rem;
+				margin-bottom: var(--spacing-md);
+				display: inline-block;
+			}
+
+			.feature-card h3 {
+				margin-bottom: var(--spacing-sm);
+				font-size: var(--font-size-xl);
+			}
+
+			/* Social Proof Section */
+			.social-proof {
+				background: var(--color-bg-secondary);
+			}
+
+			.testimonial-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				gap: var(--spacing-xl);
+			}
+
+			.testimonial-card {
+				padding: var(--spacing-2xl);
+				border-radius: var(--radius-xl);
+				transition: all var(--transition-base);
+			}
+
+			.testimonial-card:hover {
+				transform: translateY(-5px);
+				box-shadow: var(--shadow-xl);
+			}
+
+			.testimonial-quote {
+				font-size: var(--font-size-5xl);
+				line-height: 1;
+				color: var(--color-accent-primary);
+				margin-bottom: var(--spacing-md);
+			}
+
+			.testimonial-card p {
+				font-size: var(--font-size-lg);
+				line-height: 1.6;
+				margin-bottom: var(--spacing-lg);
+				font-style: italic;
+			}
+
+			.testimonial-author {
+				display: flex;
+				flex-direction: column;
+				gap: var(--spacing-xs);
+			}
+
+			.testimonial-author strong {
+				color: var(--color-text-primary);
+			}
+
+			.testimonial-author span {
+				color: var(--color-text-secondary);
+				font-size: var(--font-size-sm);
+			}
+
+			/* CTA Section Styles */
+			.cta-section {
+				padding: var(--spacing-3xl) 0;
+			}
+
+			.cta-card {
+				text-align: center;
+				padding: var(--spacing-3xl);
+				border-radius: var(--radius-2xl);
+			}
+
+			.cta-card h2 {
+				margin-bottom: var(--spacing-md);
+			}
+
+			.cta-card p {
+				font-size: var(--font-size-lg);
+				margin-bottom: var(--spacing-xl);
+				max-width: 700px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.cta-buttons {
+				display: flex;
+				gap: var(--spacing-md);
+				justify-content: center;
+				flex-wrap: wrap;
+				margin-bottom: var(--spacing-md);
+			}
+
+			.cta-note {
+				color: var(--color-text-secondary);
+				font-size: var(--font-size-sm);
+				margin-top: var(--spacing-md);
+			}
+
+			/* Footer Styles */
+			.footer {
+				background: var(--color-bg-secondary);
+				padding: var(--spacing-3xl) 0 var(--spacing-lg);
+				border-top: 1px solid rgba(255, 255, 255, 0.1);
+			}
+
+			.footer-content {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+				gap: var(--spacing-xl);
+				margin-bottom: var(--spacing-xl);
+			}
+
+			.footer-section h3,
+			.footer-section h4 {
+				margin-bottom: var(--spacing-md);
+				color: var(--color-text-primary);
+			}
+
+			.footer-section ul {
+				list-style: none;
+			}
+
+			.footer-section ul li {
+				margin-bottom: var(--spacing-xs);
+			}
+
+			.footer-section a {
+				color: var(--color-text-secondary);
+				text-decoration: none;
+				transition: color var(--transition-fast);
+			}
+
+			.footer-section a:hover {
+				color: var(--color-accent-primary);
+			}
+
+			.social-links {
+				display: flex;
+				gap: var(--spacing-md);
+				flex-wrap: wrap;
+			}
+
+			.footer-bottom {
+				text-align: center;
+				padding-top: var(--spacing-lg);
+				border-top: 1px solid rgba(255, 255, 255, 0.1);
+				color: var(--color-text-muted);
+			}
+
+			/* Responsive Styles */
+			@media (max-width: 768px) {
+				.nav-links {
+					display: none;
+				}
+
+				.hero {
+					padding-top: 100px;
+				}
+
+				.hero-content {
+					grid-template-columns: 1fr;
+					gap: var(--spacing-xl);
+				}
+
+				.hero-image {
+					order: -1;
+				}
+
+				.hero-cta {
+					flex-direction: column;
+				}
+
+				.hero-cta .btn {
+					width: 100%;
+				}
+
+				.hero-stats {
+					flex-direction: column;
+					gap: var(--spacing-md);
+				}
+
+				.testimonial-grid {
+					grid-template-columns: 1fr;
+				}
+
+				.cta-buttons {
+					flex-direction: column;
+				}
+
+				.cta-buttons .btn {
+					width: 100%;
+				}
+			}
+		</style>
+	</body>
+</html>
